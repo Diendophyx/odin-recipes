@@ -2,3 +2,28 @@
 /* padding increases the space between the border of a box and the content of the box.
 margin increases the space between the borders of a box and the borders of adjacent boxes.
 border adds space (even if it’s only a pixel or two) between the margin and the padding. */
+
+/* 
+https://www.youtube.com/watch?v=K74l26pE4YA
+Flexbox notes:
+once you give a container (like a div) a property: Display:flex;
+you then have control over it's children
+by default - the flex direction is set to row (horizontal)
+Cross axis runs vertically
+if you add a container with a fixed width - by default it will sit in the top left
+this is because the main axis starts at the left and the top
+
+Say you have 3 children containers with a fixed width within 1 parent:
+The amount of space these take up is called the 'main size'
+if you change the item's width to 100%, flexbox will distribute the
+3 containers equally along the entire page (33% Each)
+
+Use Justify content to space evenly or push elements to the flex ends
+use align to align (align:center)
+
+
+if you set the flex direction to Collum like so: flex-direction:collum;
+then everything will work the same but be shown horizontal and the cross will now be vertical
+
+
+*/
