@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* Using inline style as it's just a little easier to not keep linking external docs */
+.flex-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+}
+.textone{
+    /* This is the best solution I can come up with for how to center text both horizontally
+    and vertically, does it work though? */
+    margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="one"><p class="textone">Text goes here</p></div>
+        <!-- okay, turns out you cannot use numbers as class identifiers -->
+        <div class="two"></div>
+        <div class="three"></div>
+        <!-- <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+        <div class="nine"></div>
+        <div class="ten"></div>
+        <div class="eleven"></div>
+        <div class="twelve"></div>
+        <div class="thirteen"></div>
+        <div class="fourteen"></div> -->
+      </div>
+</body>
+</html>
